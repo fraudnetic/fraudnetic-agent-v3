@@ -79,7 +79,7 @@ Returns everything at once: `{ version, visitorId, confidence, encoded, payload,
 const result = await fraudnetic.collect({ storeCookie: false });
 ```
 
-### What's new in 0.1.0
+### What's new in 1.0.0
 
 - `visitorId` — stable 128-bit device ID, plus `confidence` (0–1).
 - Bot detection (`isBot`, `botScore`, `botFlags`) and tampering detection (`liesScore`, `liesFlags`, `suspicious`).

@@ -1,6 +1,6 @@
 {
   "name": "fraudnetic-agent-v3",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Fraudnetic JS integration library V3",
   "main": "index.js",
   "types": "index.d.ts",
