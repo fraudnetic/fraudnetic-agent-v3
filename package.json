@@ -1,5 +1,5 @@
 {
-  "name": "fraudnetic-agent-v3",
+  "name": "@fraudnetic/agent-v3",
   "version": "1.0.0",
   "description": "Fraudnetic JS integration library V3",
   "main": "index.js",
@@ -22,5 +22,8 @@
     "config.class.d.ts",
     "interface/",
     "library/"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

@@ -3,7 +3,7 @@ Version 1.0 – © [2025] Fraudnetic Technologies
 
 This software is the proprietary property of Fraudnetic Technologies and is licensed, not sold.
 
-Permission is hereby granted to use the `fraudnetic-agent-v3` SDK strictly within:
+Permission is hereby granted to use the `@fraudnetic/agent-v3` SDK strictly within:
 1. The official Fraudnetic SaaS platform, or
 2. Platforms, products, or systems operated by officially licensed partners with written authorization from Fraudnetic Technologies.
 

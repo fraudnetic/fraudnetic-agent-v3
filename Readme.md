@@ -1,6 +1,6 @@
-# 🛡️ fraudnetic-agent-v3
+# 🛡️ @fraudnetic/agent-v3
 
-`fraudnetic-agent-v3` is a lightweight JavaScript SDK that collects browser fingerprint data and returns a secure token used for fraud protection. This token can be attached to every HTTP request to help backend systems detect and prevent bots, abuse, and fraudulent behavior.
+`@fraudnetic/agent-v3` is a lightweight JavaScript SDK that collects browser fingerprint data and returns a secure token used for fraud protection. This token can be attached to every HTTP request to help backend systems detect and prevent bots, abuse, and fraudulent behavior.
 
 > ✅ This SDK is part of the **Fraudnetic Software Suite** — an advanced toolkit for fraud detection, behavioral analysis, and secure session tracking.
 
@@ -11,9 +11,9 @@
 Install with npm or yarn:
 
 ```bash
-npm install fraudnetic-agent-v3
+npm install @fraudnetic/agent-v3
 # or
-yarn add fraudnetic-agent-v3
+yarn add @fraudnetic/agent-v3
 ```
 
 ---
@@ -23,7 +23,7 @@ yarn add fraudnetic-agent-v3
 Initialize Fraudnetic when your app loads. It returns a secure token you can attach to outgoing HTTP requests.
 
 ```ts
-import fraudnetic from 'fraudnetic-agent-v3';
+import fraudnetic from '@fraudnetic/agent-v3';
 
 fraudnetic.init().then((token) => {
   console.log('Fraudnetic initialized');
@@ -86,7 +86,7 @@ const result = await fraudnetic.collect({ storeCookie: false });
 - `incognito`, `timezone`, `deviceModel`, `architecture`, `adBlock`.
 - All fields of the previous payload are kept with the same names and types. Because broken signals were fixed, legacy hashes (`browserFingerprint`, `canvasFingerprint`, …) change once after upgrading.
 
-> The SDK runs in the browser only. With server-side rendering (Next.js, Nuxt, Angular Universal), import it on the client side, e.g. `const { default: fraudnetic } = await import('fraudnetic-agent-v3');` inside `useEffect` / `onMounted`.
+> The SDK runs in the browser only. With server-side rendering (Next.js, Nuxt, Angular Universal), import it on the client side, e.g. `const { default: fraudnetic } = await import('@fraudnetic/agent-v3');` inside `useEffect` / `onMounted`.
 
 ---
 
@@ -96,7 +96,7 @@ const result = await fraudnetic.collect({ storeCookie: false });
 
 ```ts
 import { Component, OnInit } from '@angular/core';
-import fraudnetic from 'fraudnetic-agent-v3';
+import fraudnetic from '@fraudnetic/agent-v3';
 
 @Component({
   selector: 'app-root',
@@ -117,7 +117,7 @@ export class AppComponent implements OnInit {
 
 ```tsx
 import React, { useEffect } from 'react';
-import fraudnetic from 'fraudnetic-agent-v3';
+import fraudnetic from '@fraudnetic/agent-v3';
 import axios from 'axios';
 
 export default function App() {
@@ -135,7 +135,7 @@ export default function App() {
 
 ```ts
 import { createApp } from 'vue';
-import fraudnetic from 'fraudnetic-agent-v3';
+import fraudnetic from '@fraudnetic/agent-v3';
 import App from './App.vue';
 import axios from 'axios';
 
@@ -149,7 +149,7 @@ fraudnetic.init().then((token) => {
 
 ```html
 <script type="module">
-  import fraudnetic from 'fraudnetic-agent-v3';
+  import fraudnetic from '@fraudnetic/agent-v3';
 
   fraudnetic.init().then((token) => {
     fetch('/api/submit', {
@@ -186,7 +186,7 @@ Version 1.0 – © [2025] Fraudnetic Technologies
 
 This software is the proprietary property of Fraudnetic Technologies and is licensed, not sold.
 
-Permission is hereby granted to use the `fraudnetic-agent-v3` SDK strictly within:
+Permission is hereby granted to use the `@fraudnetic/agent-v3` SDK strictly within:
 1. The official Fraudnetic SaaS platform, or
 2. Platforms, products, or systems operated by officially licensed partners with written authorization from Fraudnetic Technologies.
 
