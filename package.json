@@ -1,0 +1,26 @@
+{
+  "name": "fraudnetic-agent-v3",
+  "version": "0.1.0",
+  "description": "Fraudnetic JS integration library V3",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fraudnetic/fraudnetic-agent-v3.git"
+  },
+  "keywords": [
+    "fraudnetic",
+    "typescript",
+    "agent"
+  ],
+  "author": "Davit G.",
+  "license": "MIT",
+  "homepage": "https://github.com/fraudnetic/fraudnetic-agent-v3",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "config.class.d.ts",
+    "interface/",
+    "library/"
+  ]
+}
